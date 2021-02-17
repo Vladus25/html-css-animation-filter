@@ -44,3 +44,119 @@
 .ex-5-square{
   transition: 1s;
 }
+
+/* Esercizio 6 */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+/* Esercizio 7 */
+.ex-7-img:hover{
+  filter: grayscale(0.7) sepia(0.5);
+}
+
+.ex-7-img{
+  transition: 1.5s;
+}
+
+/* Esercizio 8 */
+.ex-8-img:hover{
+  border-radius: 20px;
+  filter: grayscale(0.5) sepia(0.5);
+}
+
+.ex-8-img{
+  transition: 1.5s;
+}
+
+/* Esercizio 9 */
+.ex-9-img:hover{
+  border-radius: 20px;
+  transform: scale(1.5);
+  filter: grayscale(0.5) sepia(0.5);
+}
+
+.ex-9-img{
+  transition: 1.5s;
+}
+
+/* Esercizio 10 */
+.ex-10-icon{
+  animation: caricamento 1s infinite linear;
+}
+
+@keyframes caricamento {
+  25% {transform: rotate(90deg);}
+  50% {transform: rotate(180deg);}
+  75% {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover{
+  animation: caricamento-2 2s linear;
+
+}
+
+@keyframes caricamento-2 {
+  90% {transform: rotate(300deg);}
+  100% {transform: rotate(0);}
+}
+
+/* Esercizio 12 */
+.ex-12-button{
+  margin-left: 10px;
+}
+
+.ex-12-button:hover .ex-12-top-white {
+  animation: giro-button-top 2s linear;
+}
+
+
+@keyframes giro-button-top {
+  0% {left: 10%;}
+  50% {left: calc(100% - 60px);}
+  100% {left: 10%;}
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: giro-button-bottom 2s linear;
+}
+
+
+@keyframes giro-button-bottom {
+  0% {right: 20%;}
+  50% {right: calc(100% - 60px);}
+  100% {right: 20%;}
+}
+
+/* Esercizio 13 */
+.ex-13-button{
+  margin-left: 10px;
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: giro-button-top-2 2s linear;
+}
+
+@keyframes giro-button-top-2 {
+  0% {left: 10%; top: -10px;}
+  30% {left: calc(100% - 30px); top: -10px;}
+  45% {left: calc(100% - 30px); top: 100%;}
+  75% {left: 0; top: 100%;}
+  90% {left: -10px; top: -10px;}
+  100% {left: 10%; top: -10px;}
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: giro-button-bottom-2 2s linear;
+}
+
+@keyframes giro-button-bottom-2 {
+  0% {right: 20%; bottom: -10px;}
+  30% {right: calc(100% - 30px); bottom: -10px;}
+  45% {right: calc(100% - 30px); bottom: 100%;}
+  75% {right: 0; bottom: 100%;}
+  90% {right: -10px; bottom: -10px;}
+  100% {right: 20%; bottom: -10px;}
+}
